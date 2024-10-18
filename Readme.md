@@ -14,7 +14,7 @@ Winedrops challenge
 
 ## **Tech Stack**
 
-- **Backend**: Fastify, Prisma (SQLite), Axios
+- **Backend**: Fastify, Prisma (SQLite)
 - **Frontend**: React, Axios
 
 ## **Getting Started**
