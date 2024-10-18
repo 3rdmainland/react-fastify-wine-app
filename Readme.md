@@ -1,8 +1,11 @@
 # **Winedrops - Best-Selling Wines App**
 
+## **Jenyo Johnson - jenyojohnson@gmail.com**
+
 ## **Overview**
 
 Winedrops challenge
+Jenyo Johnson - jenyojohnson@gmail.com
 
 ## **Features**
 
