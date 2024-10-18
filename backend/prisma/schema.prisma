@@ -1,0 +1,33 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model customer_order {
+  id              Int           @id @default(autoincrement())
+  wine_product_id Int?
+  quantity        Int?
+  total_amount    Decimal?
+  status          String?
+  wine_product    wine_product? @relation(fields: [wine_product_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model master_wine {
+  id           Int            @id @default(autoincrement())
+  name         String?
+  vintage      Int?
+  wine_product wine_product[]
+}
+
+model wine_product {
+  id             Int              @id @default(autoincrement())
+  master_wine_id Int?
+  name           String?
+  price          Decimal?
+  customer_order customer_order[]
+  master_wine    master_wine?     @relation(fields: [master_wine_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
