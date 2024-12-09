@@ -31,7 +31,13 @@
    pnpm prisma generate
    ```
 
-3. Start the backend server:
+3. Create and source env:
+
+   ```bash
+   DATABASE_URL="file:../db/winedrops.db"
+   ```
+
+4. Start the backend server:
    ```bash
    pnpm start
    ```
