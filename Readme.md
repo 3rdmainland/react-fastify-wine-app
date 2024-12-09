@@ -1,11 +1,6 @@
-# **Winedrops - Best-Selling Wines App**
+# **React Fastify Wine App**
 
 ## **Jenyo Johnson - jenyojohnson@gmail.com**
-
-## **Overview**
-
-Winedrops challenge
-Jenyo Johnson - jenyojohnson@gmail.com
 
 ## **Features**
 
